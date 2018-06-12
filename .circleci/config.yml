@@ -169,9 +169,9 @@ jobs:
           name: Build Mac
           environment:
             CSC_LINK: resource/certificates/mac.p12
+            WIN_CSC_LINK: resource/certificates/win.p12
             CSC_FOR_PULL_REQUEST: true # don't do this in production
           command: |
-                  set +e
                   source $HOME/.nvm/nvm.sh
                   nvm use
                   make package BUILD_PLATFORM=mwl
