@@ -235,7 +235,7 @@ workflows:
               only: /.*/
       - artifacts:
           requires:
-            - win-and-linux
+            # - win-and-linux
             - mac
           filters:
             branches:
